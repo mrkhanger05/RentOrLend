@@ -1,0 +1,328 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+::-webkit-input-placeholder {
+    color: #000000;
+}
+
+body{
+    margin: 0px;
+}
+
+/* To Divide The Section Into Two Parts Starts Here */
+
+.rightcon {
+    float: right;
+    width: 39%;
+    background-color: #eee9;
+}
+
+.leftcon {
+    float: left;
+    width: 59%;
+    background-color: #eee9;
+}
+
+/* To Divide The Section Into Two Parts Ends Here */
+
+
+/* Right Section Styling  */
+
+.review-bag {
+    display: flex;
+    background: white;
+    padding: 6px;
+    padding-left: 35px;
+    border: 0.02px solid;
+    border-style: none none solid solid;
+}
+
+/* Navbar styling  */
+
+
+#Checkoutform {
+    width: 100%;
+}
+
+/* Form input Styling  */
+
+.form-input {
+    height: 30px;
+    margin: 6px 6px;
+    width: 70%;
+    border: 1px solid black;
+}
+
+
+/* Selecter Element Styling */
+
+.Gender {
+    margin-left: 6px;
+    color: black;
+    background: white;
+    height: 25px;
+    font-size: 15px;
+    width: 86%;
+    border: 1px solid;
+}
+
+/* Container Styling For All The Input Fields Starts Here */
+
+.email-phone { 
+    background: white;
+    padding: 25px 15px;
+    width: 80%;
+    display: block;
+    margin: 25px 0px;
+}
+
+#contact-info,
+#bank-details,
+#my-contact-info,
+#About-me,
+#Addresses,
+#shipping-add,
+#shipping-method,
+#Payment-method,
+#Password{
+    margin-left: 13%;
+}
+
+.email-phone h3 {
+
+    margin-top: 6%;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.email-phone p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.email-phone a {
+
+    color: black;
+    margin: 0px 6px 0px 0px;
+    font-size: 17px;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+a:hover {
+    font-size: 19px;
+}
+/* Container Styling For All The Input Fields Ends Here */
+
+/* Button Used To Open The Contact Form - Fixed At The Bottom Of The Page 
+Starts Here*/
+.open-button {
+    color: white;
+    padding: 8px 16px;
+    margin-top: 6px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    transition: all .2s linear;
+    float: right;
+    background-color: #000;
+}
+
+.btn-cancel {
+    width: 56px;
+    color: white;
+    background-color: black;
+    border: none;
+    margin: 8px 0px 2px 5px;
+    float: right;
+    transition: all .2s linear;
+    padding: 6px;
+}
+
+.btn-cancel:hover {
+    transform: scale(1.05);
+}
+
+.open-button:hover {
+    transform: scale(1.08);
+}
+
+/* Button Used To Open The Contact Form - Fixed At The Bottom Of The Page 
+Ends  Here*/
+
+
+/* Media Query For the Form Starts Here */
+
+@media screen and (max-width: 701px) {
+    .rightcon {
+        width: 100%;
+    }
+
+    .leftcon {
+        width: 100%;
+    }
+
+    .place-order {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .btn {
+        margin: 5px;
+        width: 98%;
+    }
+
+    .product .content {
+        width: 98%;
+    }
+
+    .email-phone {
+        width: 96%;
+    }
+
+    #contact-info,
+    #bank-details,
+    #my-contact-info,
+    #About-me,
+    #Addresses,
+    #shipping-add,
+    #shipping-method,
+    #Payment-method,
+    #Password {
+        margin-left: 4%;
+    }
+
+    .review-bag {
+        border: 0.02px solid;
+        border-style: none none solid none;
+    }
+
+}
+
+/* Media Query For the Form Starts Here */
+
+
+/* User Profile Picture Starts Here*/
+
+h1 img {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    position: relative;
+    margin: -7px 15px 0px 0px;
+    float: right;
+    border: 2px solid black;
+}
+
+/* User Profile Picture Starts Here*/
+
+
+
+/* Styling For Side NavBar  */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 12px 8px 8px 16px;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #000000;
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  border: none;
+  right: 10px;
+  font-size: 30px;
+}
+
+.closebtn:hover{
+  background-color: #000000;
+}
+
+#main {
+  transition: margin-left .5s;
+    position: absolute;
+    padding: 0px;
+    top: 6px;
+    right: 2px;
+}
+
+/* Media Query for Side NavBAr */
+
+@media screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Media Query for Side NavBAr */
+
+
+
+/* Banner And Logo Styling Starts Here*/
+
+.brandLogo{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.brandLogo p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-left: 3px;
+}
+
+/* Banner And Logo Styling Starts Here*/
+
+
+/* Bag With Number CSS Starts Here  */
+.bagcart {
+    height: 6PX;
+    line-height: 5PX;
+    position: relative;
+    vertical-align: middle;
+    width: 26PX;
+    display: inline-block;
+}
+
+.bagca {
+    font-size: 30PX;
+}
+
+.bagcar {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    line-height: inherit;
+    left: 0;
+}
+
+
+/* Bag With Number CSS Ends Here */

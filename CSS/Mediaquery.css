@@ -1,0 +1,112 @@
+@media  screen and (max-width: 500px) {
+    .category label{
+    font-size: 15px;
+    }
+    .category .row{
+    margin-left:-4px;
+    }
+    .Feedback{
+    font-size: 20px;
+    }  
+    .Feedback i {
+        color: #0e0e0e;
+    background-color: #eee;
+    border-color: #ffffff;
+    
+    }
+    
+    .tab button.active {
+        font-size: 26px;
+    }
+
+    .tab button {
+        font-size: 24px;
+    }
+
+    .bannerHeading {
+        font-size: 1.8rem;
+    }
+
+    .bannerDesc {
+        font-size: 18px;
+        width: 90%;
+        margin: 25px;
+    }
+
+    button.btn.btn-dark{
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+    }
+
+
+    #Raise-Req-btn {
+        font-size: 12px;
+    }
+
+    .horizontal-group .right {
+        float: right;
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .horizontal-group .left {
+        float: left;
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .fa-3x{
+    font-size: 2em;
+    }
+    
+    section h1{
+            text-align: center;
+           }
+    .cardwhite{
+    margin-top: 30px;
+    }
+    .inputemail{
+    margin-top: 12px;
+    }
+    .contactsection{
+    width:100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .text{
+    font-size: 20px;
+    }
+    
+    }
+
+    
+    /* Media Queries for the prodcut view*/
+@media screen and (min-width: 700px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1000px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .products .text-light{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
